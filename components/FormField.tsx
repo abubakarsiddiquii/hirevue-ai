@@ -23,22 +23,29 @@ const FormField = <T extends FieldValues>({
   placeholder,
   type = "text",
 }: FormFieldProps<T>) => {
+  const id = String(name); // stable id for SSR and client
+
   return (
     <Controller
       control={control}
       name={name}
-      render={({ field }) => (
+      render={({ field, fieldState }) => (
         <FormItem>
-          <FormLabel className="label">{label}</FormLabel>
+          <FormLabel htmlFor={id} className="label">
+            {label}
+          </FormLabel>
+
           <FormControl>
             <Input
+              id={id}
               className="input"
               type={type}
               placeholder={placeholder}
               {...field}
             />
           </FormControl>
-          <FormMessage />
+
+          <FormMessage>{fieldState.error?.message}</FormMessage>
         </FormItem>
       )}
     />
