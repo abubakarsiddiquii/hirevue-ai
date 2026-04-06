@@ -10,7 +10,7 @@ const monaSans = Mona_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "HireVue-AI",
+  title: "Intervify-AI",
   description: "An AI-powered interview preparation platform that helps job seekers practice and improve their interview skills through realistic simulations.",
 };
 
