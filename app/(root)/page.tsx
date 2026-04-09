@@ -67,7 +67,7 @@ async function Home() {
       </section>
 
       <section className="flex flex-col gap-6 mt-8">
-        <h2>Take an Interviews</h2>
+        <h2>Take an Interview</h2>
 
         <div className="interviews-section">
           {hasUpcomingInterviews ? (
