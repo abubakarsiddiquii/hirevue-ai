@@ -9,10 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@ai-sdk/google": "^3.0.31",
+    "@ai-sdk/google": "^3.0.60",
+    "@ai-sdk/openai": "^3.0.52",
+    "@ai-sdk/provider-utils": "^4.0.23",
     "@hookform/resolvers": "^5.2.2",
     "@vapi-ai/web": "^2.5.2",
-    "ai": "^6.0.100",
+    "ai": "^6.0.153",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.19",
